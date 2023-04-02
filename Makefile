@@ -1,8 +1,10 @@
+export THEOS_PACKAGE_SCHEME=rootless
+export TARGET = iphone:clang:13.7:13.0
+
 PACKAGE_VERSION=$(THEOS_PACKAGE_BASE_VERSION)
 
 include $(THEOS)/makefiles/common.mk
 
-export TARGET = iphone:clang:12.1.2:12.0
 export ARCHS = arm64 arm64e
 
 TWEAK_NAME = NDTVNoAds
